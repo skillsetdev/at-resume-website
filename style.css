@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Vollkorn";
+  src: url(assets/fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-width: 100vw;
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("assets/63ff2ad51f11a9c055cb7f74_brooke-lark-wMzx2nBdeng-unsplash\ \(1\)\ 2\ \(2\)\ \(2\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 120%;
+  display: inline-block;
+  font-family: "Vollkorn", sans-serif;
+  color: #28584e;
+  max-width: 700px;
+  text-align: center;
+  /*background: -webkit-linear-gradient(
+    120deg,
+    rgb(250, 235, 215),
+    rgb(216, 201, 181),
+    #293203
+  );
+  background-clip: text;
+  color: transparent;*/
+}
+
+button {
+  color: rgb(255, 250, 244);
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 100px;
+  background-color: #28584e;
+  border: 1px solid #28584e;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  transition: background-color 0.4s, color 0.4s;
+  display: flex;
+}
+
+#button-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
