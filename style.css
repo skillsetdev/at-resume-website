@@ -9,13 +9,13 @@ body {
     format("truetype");
 }
 
-#row {
+#main-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#column {
+#main-column {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -59,7 +59,6 @@ button {
   font-weight: 400;
   font-size: 16px;
   padding: 10px 20px;
-  border: 0px;
   border-radius: 100px;
   background-color: #28584e;
   border: 1px solid #28584e;
@@ -75,4 +74,58 @@ button {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+#valeology-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#at-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  width: 100vw;
+  background-color: #28584e;
+  flex-wrap: wrap;
+}
+
+#about-me-section {
+  background-color: #28584e;
+  height: 40vw;
+  min-height: 300px;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-me-section p {
+  color: rgb(255, 250, 244);
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 12px;
+}
+
+#about-me-section ul {
+  color: rgb(255, 250, 244);
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#at-image {
+  background-image: url("assets/IMG_1407.jpg");
+  height: 40vw;
+  min-height: 300px;
+  min-width: 180px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
 }
