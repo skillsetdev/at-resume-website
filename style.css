@@ -87,21 +87,24 @@ button {
 
 #at-section {
   margin: 80px 0px;
+  padding: 0px 10vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: stretch;
-  width: 100vw;
+  justify-content: space-evenly;
+  width: 80vw;
   flex-wrap: wrap;
+  gap: 36px;
 }
 
 #about-me-section {
   height: 40vw;
   min-height: 300px;
-  flex-grow: 3;
+  flex-grow: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #about-me-section .header {
@@ -109,7 +112,7 @@ button {
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  margin: 12px;
+  margin: 0;
 }
 
 #about-me-section .text {
@@ -119,18 +122,19 @@ button {
   font-size: 18px;
   display: inline-block;
   max-width: 600px;
-  margin: 12px;
+  width: 50vw;
+  min-width: 300px;
 }
 
 #at-image {
   background-image: url("assets/IMG_1407.jpg");
   height: 35vw;
   min-height: 300px;
-  min-width: 180px;
+  min-width: 200px;
+  max-width: 300px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-grow: 2;
-  margin: 20px 60px;
+  flex-grow: 3;
   border-radius: 10px;
 }
