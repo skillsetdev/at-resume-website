@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #ebedf5;
 }
 
 @font-face {
@@ -85,17 +86,16 @@ button {
 }
 
 #at-section {
+  margin: 80px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: stretch;
   width: 100vw;
-  background-color: #28584e;
   flex-wrap: wrap;
 }
 
 #about-me-section {
-  background-color: #28584e;
   height: 40vw;
   min-height: 300px;
   flex-grow: 3;
@@ -104,28 +104,33 @@ button {
   justify-content: center;
 }
 
-#about-me-section p {
-  color: rgb(255, 250, 244);
+#about-me-section .header {
+  color: #28584e;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
   margin: 12px;
 }
 
-#about-me-section ul {
-  color: rgb(255, 250, 244);
+#about-me-section .text {
+  color: #28584e;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
+  display: inline-block;
+  max-width: 600px;
+  margin: 12px;
 }
 
 #at-image {
   background-image: url("assets/IMG_1407.jpg");
-  height: 40vw;
+  height: 35vw;
   min-height: 300px;
   min-width: 180px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-grow: 1;
+  flex-grow: 2;
+  margin: 20px 60px;
+  border-radius: 10px;
 }
