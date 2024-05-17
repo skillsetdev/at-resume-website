@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ebedf5;
+  font-family: "Vollkorn", sans-serif;
+  color: #28584e;
 }
 
 @font-face {
@@ -54,20 +56,18 @@ h1 {
   color: transparent;*/
 }
 
-button {
+.transbutton {
   color: rgb(255, 250, 244);
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding: 10px 20px;
-  border-radius: 100px;
   background-color: #28584e;
   border: 1px solid #28584e;
   border-radius: 40px;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
-  transition: background-color 0.4s, color 0.4s;
+  transition: background-color 1s, color 0.4s;
   display: flex;
 }
 
@@ -98,7 +98,7 @@ button {
 }
 
 #about-me-section {
-  height: 40vw;
+  height: 30vw;
   min-height: 300px;
   flex-grow: 5;
   display: flex;
@@ -127,7 +127,7 @@ button {
 }
 
 #at-image {
-  background-image: url("assets/IMG_1407.jpg");
+  background-image: url("assets/IMG_3943.JPG");
   height: 35vw;
   min-height: 300px;
   min-width: 200px;
@@ -137,4 +137,57 @@ button {
   background-repeat: no-repeat;
   flex-grow: 3;
   border-radius: 10px;
+}
+
+header {
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#cabinet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#navbar .transbutton {
+  color: rgb(255, 250, 244);
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #28584e;
+  border: 1px solid #28584e;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  transition: background-color 1s, color 0.4s;
+  display: flex;
+}
+
+#separator {
+  border: 0.5px solid #28584e;
+  width: 80vw;
+}
+
+#name {
+  font-size: 32px;
+  font-weight: 600;
 }
