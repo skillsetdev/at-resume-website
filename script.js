@@ -14,7 +14,7 @@ transButtonArray.forEach((button) => {
 });
 
 function mouseOverButton(e) {
-  e.target.style.backgroundColor = "rgb(255, 250, 244)";
+  e.target.style.backgroundColor = "transparent";
   e.target.style.color = "#28584e";
 }
 function mouseOutButton(e) {
