@@ -4,6 +4,7 @@ body {
   background-color: #ebedf5;
   font-family: "Vollkorn", sans-serif;
   color: #28584e;
+  background-color: #eef4ec;
 }
 
 @font-face {
@@ -37,7 +38,20 @@ body {
   background-position: center;
 }
 
-h1 {
+#hero-section p {
+  text-align: center;
+  color: #28584e;
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+  max-width: 60vw;
+  width: 50vw;
+  min-width: 400px;
+}
+
+#hero-section h1 {
+  margin: 0px;
   font-size: 48px;
   font-weight: 500;
   line-height: 120%;
@@ -77,14 +91,6 @@ h1 {
   gap: 20px;
 }
 
-#valeology-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 #at-section {
   margin: 80px 0px;
   padding: 0px 10vw;
@@ -119,7 +125,7 @@ h1 {
   color: #28584e;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   max-width: 600px;
   width: 50vw;
@@ -140,17 +146,20 @@ h1 {
 }
 
 header {
-  height: 150px;
-  width: 100vw;
+  border-radius: 100px;
+  border: 0.5px solid #28584e;
+  margin: 20px;
+  height: 60px;
+  width: calc(100vw - 40px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
-  top: 0;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  background: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  background: rgba(255, 255, 255, 0.47);
 }
 
 #cabinet {
@@ -184,10 +193,17 @@ header {
 
 #separator {
   border: 0.5px solid #28584e;
-  width: 80vw;
+  height: 40px;
 }
 
 #name {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+  #cabinet,
+  #separator {
+    display: none;
+  }
 }
