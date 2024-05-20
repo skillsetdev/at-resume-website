@@ -1,3 +1,68 @@
+header {
+  border-radius: 100px;
+  border: 0.5px solid #28584e;
+  margin: 0px 20px;
+  height: 60px;
+  width: calc(100vw - 40px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  background-color: rgba(255, 255, 255, 0.47);
+}
+#cabinet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#cabinet a {
+  display: block;
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  border: none; /* Remove border */
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+#navbar .transbutton {
+  color: rgb(255, 250, 244);
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #28584e;
+  border: 1px solid #28584e;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  transition: background-color 1s, color 0.4s;
+  display: flex;
+}
+#separator {
+  border: 0.5px solid #28584e;
+  height: 40px;
+}
+#name {
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 650px) {
+  #cabinet,
+  #separator {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,20 +70,18 @@ body {
   font-family: "Vollkorn", sans-serif;
   color: #28584e;
   background-color: #eef4ec;
+  font-size: 20px;
 }
-
 @font-face {
   font-family: "Vollkorn";
   src: url(assets/fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf)
     format("truetype");
 }
-
 #main-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 #main-column {
   display: flex;
   flex-direction: column;
@@ -27,6 +90,8 @@ body {
 }
 
 #hero-section {
+  box-sizing: border-box;
+  padding: 80px 0px 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +102,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 #hero-section p {
   text-align: center;
   color: #28584e;
@@ -49,7 +113,6 @@ body {
   width: 50vw;
   min-width: 400px;
 }
-
 #hero-section h1 {
   margin: 0px;
   font-size: 48px;
@@ -69,7 +132,11 @@ body {
   background-clip: text;
   color: transparent;*/
 }
-
+#button-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .transbutton {
   color: rgb(255, 250, 244);
   font-family: "Vollkorn", sans-serif;
@@ -85,43 +152,33 @@ body {
   display: flex;
 }
 
-#button-section {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
 #at-section {
-  margin: 80px 0px;
-  padding: 0px 10vw;
+  box-sizing: border-box;
+  margin: 120px 0px 80px 0px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  width: 80vw;
+  justify-content: center;
+  width: 100vw;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 5vw;
 }
-
 #about-me-section {
-  height: 30vw;
   min-height: 300px;
-  flex-grow: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-#about-me-section .header {
+.header {
   color: #28584e;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
   font-size: 36px;
   margin: 0;
 }
-
-#about-me-section .text {
+.text {
   color: #28584e;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
@@ -131,79 +188,46 @@ body {
   width: 50vw;
   min-width: 300px;
 }
-
 #at-image {
+  border: 0.5px solid #28584e;
   background-image: url("assets/IMG_3943.JPG");
   height: 35vw;
-  min-height: 300px;
-  min-width: 200px;
-  max-width: 300px;
+  width: 30vw;
+  min-height: 350px;
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 450px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-grow: 3;
   border-radius: 10px;
 }
 
-header {
-  border-radius: 100px;
-  border: 0.5px solid #28584e;
-  margin: 20px;
-  height: 60px;
-  width: calc(100vw - 40px);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); /* For Safari */
-  background: rgba(255, 255, 255, 0.47);
-}
-
-#cabinet {
+#edu-section {
+  border-top: 0.5px solid #28584e;
+  border-bottom: 0.5px solid #28584e;
+  box-sizing: border-box;
+  background-color: rgba(30, 77, 55, 0.06);
+  padding: 60px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-
-#navbar .transbutton {
-  color: rgb(255, 250, 244);
-  font-family: "Vollkorn", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  background-color: #28584e;
-  border: 1px solid #28584e;
-  border-radius: 40px;
-  justify-content: center;
   align-items: center;
-  padding: 6px 12px;
-  transition: background-color 1s, color 0.4s;
-  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
-
-#separator {
+#edu-section div {
+  background-color: rgba(255, 255, 255, 0.47);
+  margin: 20px 5vw;
+  padding: 20px;
+  border-radius: 30px;
   border: 0.5px solid #28584e;
-  height: 40px;
 }
-
-#name {
-  font-size: 24px;
-  font-weight: 500;
+li {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
-
-@media (max-width: 650px) {
-  #cabinet,
-  #separator {
-    display: none;
-  }
+#edu-section #horizontal-separator {
+  border: 0.5px solid #28584e;
+  margin: 0px 40px 20px 40px;
+  padding: 0px;
 }
