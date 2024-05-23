@@ -28,12 +28,12 @@ function redirectToPage(e) {
       window.location.href = "about-me.html";
       break;
     case "uslugi":
-      window.location.href = "index.html";
+      window.location.href = "services.html";
       break;
     case "contacti":
       window.location.href = "index.html";
       break;
-    case "blog":
+    default:
       window.location.href = "index.html";
       break;
   }

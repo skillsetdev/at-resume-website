@@ -32,7 +32,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 1.5vw;
 }
 #navbar .transbutton {
   color: rgb(255, 250, 244);
@@ -230,4 +230,64 @@ li {
   border: 0.5px solid #28584e;
   margin: 0px 40px 20px 40px;
   padding: 0px;
+}
+
+#queries-section {
+  border-top: 0.5px solid #28584e;
+  border-bottom: 0.5px solid #28584e;
+  box-sizing: border-box;
+  background-color: rgba(30, 77, 55, 0.06);
+  padding: 120px 10px 80px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+#queries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+#queries .col div {
+  background-color: rgba(255, 255, 255, 0.47);
+  margin: 20px 2vw;
+  padding: 20px;
+  border-radius: 30px;
+  border: 0.5px solid #28584e;
+  max-width: 450px;
+}
+#queries .col div span {
+  font-weight: 590;
+}
+#services-section {
+  box-sizing: border-box;
+  padding: 60px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+#services {
+  width: 100vw;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+#services div {
+  background-color: rgba(255, 255, 255, 0.47);
+  margin: 20px 2vw;
+  padding: 20px;
+  border-radius: 30px;
+  border: 0.5px solid #28584e;
+  flex-shrink: 0;
+  max-width: 800px;
+  overflow: visible;
+  white-space: normal;
 }
