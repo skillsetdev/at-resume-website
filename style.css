@@ -273,21 +273,45 @@ li {
 }
 #services {
   width: 100vw;
-  overflow: auto;
-  white-space: nowrap;
+  /*overflow: auto;
+  white-space: nowrap;//makes it a horizontal scrollable list*/
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
 }
-#services div {
+#services .expanding-card {
   background-color: rgba(255, 255, 255, 0.47);
   margin: 20px 2vw;
   padding: 20px;
   border-radius: 30px;
   border: 0.5px solid #28584e;
   flex-shrink: 0;
-  max-width: 800px;
-  overflow: visible;
-  white-space: normal;
+  width: 75vw;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.expanding-card:hover {
+  box-shadow: 0 0 12px #d3d3d3;
+}
+.expanding-text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: max-height 1000ms ease-in-out;
+  max-height: 0px;
+  overflow: hidden;
+}
+.expanding-card:hover .expanding-text {
+  max-height: 500px;
+}
+.horizontal-separator {
+  border: 0.5px solid #28584e;
+  margin: 10px 0px;
+  padding: 0px;
+}
+.expanding-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
