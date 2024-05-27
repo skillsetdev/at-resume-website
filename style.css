@@ -56,12 +56,6 @@ header {
   font-size: 24px;
   font-weight: 500;
 }
-@media (max-width: 650px) {
-  #cabinet,
-  #separator {
-    display: none;
-  }
-}
 
 body {
   margin: 0;
@@ -280,7 +274,7 @@ li {
   justify-content: start;
   align-items: center;
 }
-#services .expanding-card {
+.expanding-card {
   background-color: rgba(255, 255, 255, 0.47);
   margin: 20px 2vw;
   padding: 20px;
@@ -291,7 +285,8 @@ li {
   max-width: 1000px;
   overflow: hidden;
 }
-.expanding-card:hover {
+.expanding-card:hover,
+.expanding-card:active {
   box-shadow: 0 0 12px #d3d3d3;
 }
 .expanding-text {
@@ -302,8 +297,13 @@ li {
   max-height: 0px;
   overflow: hidden;
 }
-.expanding-card:hover .expanding-text {
+.expanding-card:hover .expanding-text,
+.expanding-card:active .expanding-text {
   max-height: 500px;
+}
+.expanding-card:hover .expanding-header svg,
+.expanding-card:active .expanding-header svg {
+  display: none;
 }
 .horizontal-separator {
   border: 0.5px solid #28584e;
@@ -314,4 +314,18 @@ li {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+svg {
+  display: none;
+}
+@media (max-width: 650px) {
+  #cabinet,
+  #separator {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    display: inline;
+  }
 }
