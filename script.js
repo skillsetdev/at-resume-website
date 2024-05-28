@@ -31,7 +31,10 @@ function redirectToPage(e) {
       window.location.href = "services.html";
       break;
     case "contacti":
-      window.location.href = "index.html";
+      window.location.href = "contact.html";
+      break;
+    case "options":
+      window.location.href = "services.html";
       break;
     default:
       window.location.href = "index.html";

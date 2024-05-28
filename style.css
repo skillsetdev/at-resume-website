@@ -85,7 +85,7 @@ body {
 
 #hero-section {
   box-sizing: border-box;
-  padding: 80px 0px 10px 0px;
+  padding: 50px 0px 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,4 +328,73 @@ svg {
   svg {
     display: inline;
   }
+  body {
+    font-size: 18px;
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -20px;
+  min-width: 160px;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  margin-top: 5px;
+  color: #28584e;
+  padding: 12px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  font-family: "Vollkorn", sans-serif;
+  border: 1px solid #28584e;
+  border-radius: 40px;
+  padding: 6px 12px;
+  transition: background-color 1s, color 0.4s, margin-top 0.5s;
+  background-color: #eef4ec;
+}
+.dropdown-content a svg {
+  display: inline;
+  color: #28584e;
+  height: 20px;
+  width: 20px;
+}
+/* Change color of dropdown links on hover */
+.dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover #dropbtn,
+.dropdown:active #dropbtn {
+  color: #28584e;
+  background-color: transparent;
+}
+.dropdown:hover #dropbtn2,
+.dropdown:active #dropbtn2 {
+  color: #28584e;
+  background-color: transparent;
 }
