@@ -286,7 +286,8 @@ li {
   overflow: hidden;
 }
 .expanding-card:hover,
-.expanding-card:active {
+.expanding-card:active,
+.expanding-card.active {
   box-shadow: 0 0 12px #d3d3d3;
 }
 .expanding-text {
@@ -298,11 +299,13 @@ li {
   overflow: hidden;
 }
 .expanding-card:hover .expanding-text,
-.expanding-card:active .expanding-text {
+.expanding-card:active .expanding-text,
+.expanding-card.active .expanding-text {
   max-height: 500px;
 }
 .expanding-card:hover .expanding-header svg,
-.expanding-card:active .expanding-header svg {
+.expanding-card:active .expanding-header svg,
+.expanding-card.active .expanding-header svg {
   display: none;
 }
 .horizontal-separator {
@@ -383,18 +386,21 @@ svg {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content,
-.dropdown:active .dropdown-content {
+.dropdown:active .dropdown-content,
+.dropdown.active .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover #dropbtn,
-.dropdown:active #dropbtn {
+.dropdown:active #dropbtn,
+.dropdown.active #dropbtn {
   color: #28584e;
   background-color: transparent;
 }
 .dropdown:hover #dropbtn2,
-.dropdown:active #dropbtn2 {
+.dropdown:active #dropbtn2,
+.dropdown.active #dropbtn2 {
   color: #28584e;
   background-color: transparent;
 }
