@@ -254,7 +254,7 @@ li {
   max-width: 450px;
 }
 #queries .col div span {
-  font-weight: 590;
+  font-weight: 450;
 }
 #services-section {
   box-sizing: border-box;
@@ -274,7 +274,8 @@ li {
   justify-content: start;
   align-items: center;
 }
-.expanding-card {
+.expanding-card,
+.card {
   background-color: rgba(255, 255, 255, 0.47);
   margin: 20px 2vw;
   padding: 20px;
@@ -294,6 +295,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: start;
   transition: max-height 1000ms ease-in-out;
   max-height: 0px;
   overflow: hidden;
@@ -302,6 +304,18 @@ li {
 .expanding-card:active .expanding-text,
 .expanding-card.active .expanding-text {
   max-height: 500px;
+}
+.expanding-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.expanding-header svg {
+  /*height width and interactive buttons in js*/
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
 }
 .expanding-card:hover .expanding-header svg,
 .expanding-card:active .expanding-header svg,

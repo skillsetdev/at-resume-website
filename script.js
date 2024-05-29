@@ -43,3 +43,19 @@ function redirectToPage(e) {
 
   mouseOutButton(e);
 }
+
+const expandingCardArray = [];
+expandingCardArray.push(...document.querySelectorAll(".expanding-card"));
+expandingCardArray.forEach((card) => {
+  card.addEventListener("click", expandCard);
+});
+function expandCard(e) {
+  const currentCard = e.currentTarget;
+  expandingCardArray.forEach((card) => {
+    const expandingText = card.querySelector(".expanding-text");
+    if (expandingText) {
+      expandingText.style.maxHeight = "0px";
+    }
+  });
+  currentCard.querySelector(".expanding-text").style.maxHeight = "500px";
+}
